@@ -61,44 +61,44 @@ a:hover, a:active {
 }
 
 @-webkit-keyframes fadeInDown {
-  0% {
+  /* 0% {
     opacity: 0;
     -webkit-transform: translateY(-20px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translateY(0);
-  }
+  } */
 }
 @-moz-keyframes fadeInDown {
-  0% {
+  /* 0% {
     opacity: 0;
     -moz-transform: translateY(-20px);
   }
   100% {
     opacity: 1;
     -moz-transform: translateY(0);
-  }
+  } */
 }
 @-o-keyframes fadeInDown {
-  0% {
+  /* 0% {
     opacity: 0;
     -o-transform: translateY(-20px);
   }
   100% {
     opacity: 1;
     -o-transform: translateY(0);
-  }
+  } */
 }
 @keyframes fadeInDown {
-  0% {
+  /* 0% {
     opacity: 0;
     transform: translateY(-20px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
+  } */
 }
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
@@ -184,7 +184,7 @@ a:hover, a:active {
 }
 .sidebar .logo-title {
   text-align: center;
-  padding-top: 240px;
+  padding-top: 50%;
 }
 .sidebar .logo-title .description {
   font-size: 14px;
@@ -199,7 +199,7 @@ a:hover, a:active {
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 1;
-  margin: 0;
+  margin: 0.6em 0 0 0;
 }
 .sidebar .logo-title .title a {
   text-decoration: none;
