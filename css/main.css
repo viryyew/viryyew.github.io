@@ -1323,8 +1323,8 @@ pre .javascript .function {
 .posts-expand .post-body img {
   box-sizing: border-box;
   margin: 0 auto 25px;
-  padding: 3px;
-  border: 1px solid #ddd;
+  padding: 0;
+/* border: 1px solid $gray-lighter; */
 }
 @media (max-width: 767px) {
   .posts-collapse {
@@ -1456,8 +1456,9 @@ pre .javascript .function {
   position: relative;
   color: #555;
   border-bottom: none;
-  line-height: 1.2;
+  line-height: 1.6;
   vertical-align: top;
+  font-size: 1.4em;
 }
 .posts-expand .post-title-link::before {
   content: "";
@@ -1482,7 +1483,7 @@ pre .javascript .function {
   margin-left: 5px;
 }
 .posts-expand .post-meta {
-  margin: 3px 0 60px 0;
+  margin: 3px 0 40px 0;
   color: #999;
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
@@ -1725,7 +1726,7 @@ pre .javascript .function {
 }
 .site-author-image {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 6px auto;
   padding: 2px;
   max-width: 120px;
   height: auto;
@@ -1737,6 +1738,7 @@ pre .javascript .function {
   text-align: center;
   color: #222;
   font-weight: 600;
+  font-size: 16px;
 }
 .site-description {
   margin-top: 0;
@@ -1745,7 +1747,7 @@ pre .javascript .function {
   color: #999;
 }
 .links-of-author {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .links-of-author a,
 .links-of-author span.exturl {
@@ -1765,7 +1767,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #833ea2;
+  background: #ffafe0;
 }
 .feed-link,
 .chat {
@@ -1859,7 +1861,7 @@ pre .javascript .function {
   line-height: 1.4;
   white-space: nowrap;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .site-state-item {
   padding: 0 15px;
@@ -2420,6 +2422,8 @@ ul.breadcrumb li+li:last-child {
   min-height: 700px;
   box-shadow: initial;
   border-radius: initial;
+  margin-bottom: 20px;
+  padding-bottom: 100px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
@@ -2659,7 +2663,7 @@ ul.breadcrumb li+li:last-child {
   position: absolute;
 }
 .site-overview {
-  text-align: left;
+  text-align: center;
 }
 .site-author:before,
 .site-author:after {
