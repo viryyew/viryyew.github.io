@@ -1450,6 +1450,7 @@ pre .javascript .function {
   word-wrap: break-word;
   text-align: center;
   font-weight: 400;
+  font-size: 36px;
 }
 .posts-expand .post-title-link {
   display: inline-block;
@@ -1458,7 +1459,6 @@ pre .javascript .function {
   border-bottom: none;
   line-height: 1.6;
   vertical-align: top;
-  font-size: 1.4em;
 }
 .posts-expand .post-title-link::before {
   content: "";
@@ -1767,7 +1767,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c2c2db;
+  background: #e8bdff;
 }
 .feed-link,
 .chat {
@@ -2780,4 +2780,32 @@ ul.breadcrumb li+li:last-child {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+h2,
+h3,
+h4,
+h5 {
+  margin: 2em 0 1.5em 0;
+  font-weight: 300;
+}
+h1 {
+  font-size: 28px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 16px;
+}
+p {
+  font-weight: 300;
+}
+hr {
+  border-top: dotted 2px #d3d3d3;
+  background: none;
+  width: 200px;
+  margin: 40px auto;
 }
