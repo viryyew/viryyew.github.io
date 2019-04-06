@@ -1767,7 +1767,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e8bdff;
+  background: #da2eff;
 }
 .feed-link,
 .chat {
@@ -2783,8 +2783,7 @@ ul.breadcrumb li+li:last-child {
 }
 h2,
 h3,
-h4,
-h5 {
+h4 {
   margin: 2em 0 1.5em 0;
   font-weight: 300;
 }
@@ -2799,6 +2798,11 @@ h3 {
 }
 h4 {
   font-size: 16px;
+}
+h5 {
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
 }
 p {
   font-weight: 300;
