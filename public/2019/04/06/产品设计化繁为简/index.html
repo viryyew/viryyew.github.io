@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next pisces" lang="zh-cn">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto Sans CJK SC:300,300italic,400,400italic,700,700italic|Monda:300,300italic,400,400italic,700,700italic|Noto Sans CJK SC:300,300italic,400,400italic,700,700italic|Yesteryear:300,300italic,400,400italic,700,700italic|DejaVu Sans Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=7.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=7.1.0">
+
+
+  <link rel="mask-icon" href="/images/favicon.png?v=7.1.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="当你使用产品时遇到麻烦，那不是你的错，是产品设计出了问题。——《设计心理学》">
+<meta name="keywords" content="设计,阅读笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="互联网产品设计中，如何「化繁为简」？">
+<meta property="og:url" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/index.html">
+<meta property="og:site_name" content="Yew&#39;s Blog">
+<meta property="og:description" content="当你使用产品时遇到麻烦，那不是你的错，是产品设计出了问题。——《设计心理学》">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/化繁为简.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img1_1.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img1_2.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img2_1.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img2_2.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img2_3.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img3_1.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img3_2.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img5_1.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img5_2.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img5_3.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/img5_4.jpg">
+<meta property="og:updated_time" content="2019-04-06T11:07:45.367Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="互联网产品设计中，如何「化繁为简」？">
+<meta name="twitter:description" content="当你使用产品时遇到麻烦，那不是你的错，是产品设计出了问题。——《设计心理学》">
+<meta name="twitter:image" content="http://viryyew.github.io/2019/04/06/产品设计化繁为简/化繁为简.jpg">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="http://viryyew.github.io/2019/04/06/产品设计化繁为简/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>互联网产品设计中，如何「化繁为简」？ | Yew's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-cn">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Yew's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">Have a daydream</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://viryyew.github.io/2019/04/06/产品设计化繁为简/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yew">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yew's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">互联网产品设计中，如何「化繁为简」？
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-04-06 17:48:33 / Modified: 19:07:45" itemprop="dateCreated datePublished" datetime="2019-04-06T17:48:33+08:00">2019-04-06</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="/2019/04/06/产品设计化繁为简/化繁为简.jpg" alt="化繁为简"></p>
+<blockquote>
+<p>当你使用产品时遇到麻烦，那不是你的错，是产品设计出了问题。<br>——《设计心理学》</p>
+</blockquote>
+<a id="more"></a>
+<p>我们在使用各种产品的过程中，可能多多少少都会遇到「不知道该怎么用」的情况。</p>
+<p>前段时间刷微博，看到有个品牌的官博，放出一个顾客的留言，在抱怨他们家卖的某电子产品的保护套接缝不齐，结果是顾客自己戴反了。评论里有人嘲讽顾客的智商，我就想不通了，这难道不是保护套本身的设计有问题么？正反面长得那么像，又没有明确的标识，戴反了不是很正常么……</p>
+<p>就像我永远无法一眼分清楚正反面的秋裤，真的是受够了……</p>
+<hr>
+<p>我们还是来聊聊 app 吧。</p>
+<p>电商产品也经常把功能做得无比复杂，比如说「双十一」淘宝的那个战队 PK 的活动。</p>
+<p>朋友邀请我加入战队，打开页面一头雾水——我是谁、我在哪儿、我要干嘛……活动规则和参与方式写了好几屏，密密麻麻一堆小字……对不起，我真的看不懂到底怎么玩，打扰了……</p>
+<p>「<strong>设计出让用户看得懂，知道如何使用的产品。</strong>」有时候真的比想象中难。</p>
+<p>其实在工作过程中，很多产品经理和设计师们，都能隐约知道自己应该怎么做，但有时候对于「我们为什么要这么做」，可能并没有一个清晰的概念。</p>
+<h2 id="「化繁为简」的设计原则"><a href="#「化繁为简」的设计原则" class="headerlink" title="「化繁为简」的设计原则"></a>「化繁为简」的设计原则</h2><p>《设计心理学》中提到了 7 个将任务化繁为简的设计原则：</p>
+<ol>
+<li>应用储存于外部世界和头脑中的知识</li>
+<li>简化任务的结构</li>
+<li>注重可视性，消除执行阶段和评估阶段的鸿沟</li>
+<li>建立正确的匹配关系</li>
+<li>利用自然和人为的限制性因素</li>
+<li>考虑可能出现的人为差错</li>
+<li>若无法做到以上个点，就采用标准化</li>
+</ol>
+<p>书中针对每一项都有详细的说明，举的很多例子都是工业设计相关的，互联网产品涉及得很少，我就来给大家举一点 app 和网页设计相关的例子吧（最多的还是知乎，毕竟大家都在用）。</p>
+<p>其中第 7 点，单看这句话可能会让人容易理解错，其实他的意思是「建立标准化」而不是「引用标准化的方法」，比如说当年统一键盘上按键的排列方式之类的。这一点在 app 设计中应用得比较少，我就先略过了，主要聊一聊前 6 点。</p>
+<h2 id="1-应用储存于外部世界和头脑中的知识"><a href="#1-应用储存于外部世界和头脑中的知识" class="headerlink" title="1. 应用储存于外部世界和头脑中的知识"></a>1. 应用储存于外部世界和头脑中的知识</h2><p>在创造一些新产品、新功能的时候，如果能引入一些用户已经了解的概念，他们就会在刚接触产品时，就对它的定位有一个预期。</p>
+<p>用户从在产品中获取到的信息，与他已有认知相关联，就能辅助他理解产品、完成操作。</p>
+<p>比如说，新浪以前做了博客，用户可以发布长的图文内容；后来开始做「微博」，大家在用之前看到这个名字，就能推测出这可能是小的「博客」，写短内容的。</p>
+<p>在设计中，更普遍、更典型的例子，就是图标的设计。</p>
+<p><img src="/2019/04/06/产品设计化繁为简/img1_1.jpg" alt="img1_1"></p>
+<p>上图是一些经典的 icon，大家现在已经非常熟悉他们，对于他们的含义产生了共识。不过我们还是能看出来，最初它们被设计出来的时候，也是有很多的巧思。</p>
+<p>比如说「齿轮」通常出现在机械的内部，用它来表示「设置」，仿佛就在说，你点这个按钮就可以看到产品内部的运行方式。</p>
+<p>用老式座机的把手表示「通话」功能，让早期只用过座机的用户也能一眼就看出来。（年龄小的孩子可能已经不知道这是什么了……时代的眼泪……）</p>
+<p><img src="/2019/04/06/产品设计化繁为简/img1_2.jpg" alt="img1_2"></p>
+<p>有时候甚至不需要看文字，就能知道它大概是哪类内容。必要的时候，好的 icon 可以代替冗长的文字来解释功能。</p>
+<h2 id="2-简化任务的结构"><a href="#2-简化任务的结构" class="headerlink" title="2. 简化任务的结构"></a>2. 简化任务的结构</h2><p>认识一个新事物，人们需要把它放在短时记忆中加工，被反复复述的内容才会慢慢进入长时记忆，被存储起来。而人的短时记忆容量只有 7±2 个组块，保持的时间也就 5-20 秒。</p>
+<p>如果想表达的东西太多太复杂，一次性全铺开给用户，是很难令其理解的，所以需要进行简化。</p>
+<p>《设计心理学》一书中提到了好几种简化任务结构的方法，我针对互联网产品的设计做了一些调整——</p>
+<p><strong>① 突出重要的内容，强调主次</strong></p>
+<p><img src="/2019/04/06/产品设计化繁为简/img2_1.jpg" alt="img2_1"></p>
+<p>主要内容是知友相关的信息——头像、名字、在想法中的一些数据等等。而「为什么推荐给我——我关注的人关注了她」这个信息，是相对来说次要一些的信息，因此字号比较小。</p>
+<p><strong>②</strong> <strong>将信息重新分组、编排，使之更好理解</strong></p>
+<p><img src="/2019/04/06/产品设计化繁为简/img2_2.jpg" alt="img2_2"></p>
+<p>手边没有新的安卓设备，就截了老版原生系统的图。谷歌将设置中二十多个项目进行了分组，组的个数和组内的项目数都在 9 个以下。</p>
+<p><strong>③</strong> <strong>简化操作的流程，取消部分操作或建立自动规则</strong></p>
+<p><img src="/2019/04/06/产品设计化繁为简/img2_3.jpg" alt="img2_3"></p>
+<p>没有在知乎 PC 端网页提过问的朋友，可以去感受一下这个流程，我觉得体验还是很不错的。</p>
+<p>发布提问的流程，正常情况下需要先搜索——看看站内是不是已经有类似的提问了，如果没有才开始创建问题，然后写问题表述、绑定话题等等……</p>
+<p>经过产品设计优化之后的提问流程，我们可以直接填写问题，输入框下方就会自动「联想」站内类似的问题。关闭联想菜单后，系统会自动匹配相关话题。如果不需要修改，这个时候，我们只需要考虑「是否填写问题描述」即可。</p>
+<h2 id="3-注重可视性，消除执行阶段和评估阶段的鸿沟"><a href="#3-注重可视性，消除执行阶段和评估阶段的鸿沟" class="headerlink" title="3. 注重可视性，消除执行阶段和评估阶段的鸿沟"></a>3. 注重可视性，消除执行阶段和评估阶段的鸿沟</h2><p>要想使「从理解到执行」的过程更顺畅，就需要给用户提供足够清晰的视觉线索。</p>
+<p>以用户的 profile 页为例，通常这个页面需要承载的内容很多，有些是纯展示作用的，有些可以点击的。设计中我们需要「<strong>用视觉元素，表达清楚哪些是可操作的，以及如何操作</strong>」。</p>
+<p><img src="/2019/04/06/产品设计化繁为简/img3_1.jpg" alt="img3_1"></p>
+<p>这次看个反例——这一点知乎就做得不够好了，你知道这里的有哪些元素是可以点击的么？</p>
+<p>「ACG」「动漫」「动画」「27 个回答」「9 篇文章」「1,764 次公共编辑」分别对应着不同的落地页……</p>
+<p><img src="/2019/04/06/产品设计化繁为简/img3_2.jpg" alt="img3_2"></p>
+<p>⬆ iOS 桌面点击 app 图标的触摸效果</p>
+<p>「<strong>把操作的结果明确地显示出来</strong>」同样很重要，不管是 iOS 还是安卓，系统级的 app 都很重视这一点，即时的触摸视觉反馈能让用户清楚地知道自己的操作生效了。</p>
+<h2 id="4-建立正确的匹配关系"><a href="#4-建立正确的匹配关系" class="headerlink" title="4. 建立正确的匹配关系"></a>4. 建立正确的匹配关系</h2><p>以下相邻元素之间，需要有正确的匹配关系。</p>
+<p>「产品的实际状态」-「用户感知到的状态」-「用户的意图、期望」-「用户的实际行为」-「最终的效果」</p>
+<p>再举一个反例——iOS 中，从屏幕左侧向右划返回上一页，是非常常见的操作。正常情况下，右划时页面应该向右移动，但是微信小程序的页面是向下移动的。第一次使用会觉得很意外，当我下次尝试下拉退出页面时，发现下拉是刷新……</p>
+<h2 id="5-利用自然和人为的限制性因素"><a href="#5-利用自然和人为的限制性因素" class="headerlink" title="5. 利用自然和人为的限制性因素"></a>5. 利用自然和人为的限制性因素</h2><p>复杂的功能，可以减少每一步操作所面临的选择，使用户只能看到正确的操作方法，以此保证得到有效的结果。</p>
+<p>不知道大家有没有用过 Things，一个任务管理的应用，在里面创建 to-do 项目<strong>有时</strong>真的令人头大……</p>
+<p><img src="/2019/04/06/产品设计化繁为简/img5_1.jpg" alt="img5_1"></p>
+<p>页面看上去倒是很简洁，创建一条 to-do，首先是需要输入内容，默认会创建在「今天」，你想改变日期时需要想一下，然后发现是点击左下角的「今天」。添加提醒也在这个入口的浮层里。</p>
+<p>浮层面板的内容比较多，有很多操作的可能性，再次需要观察思考一下——该点哪个位置才能设置提醒时间。</p>
+<p><img src="/2019/04/06/产品设计化繁为简/img5_2.jpg" alt="img5_2"></p>
+<p>好不容易把提醒时间加上了，还容易一不小心点了「清除」，又得重新来一遍……</p>
+<p>几乎每一步都需要思考一下「我该点哪儿」……</p>
+<p>我的朋友 <a href="https://www.zhihu.com/people/87c39b051911178ce45ec207c651d4ec" target="_blank" rel="noopener">@Steve</a> 用「捷径」优化了一下这个流程（可以找他要教程 🌚）——</p>
+<p><img src="/2019/04/06/产品设计化繁为简/img5_3.jpg" alt="img5_3"></p>
+<p>第一步，填写 to-do 内容；第二步，设置日期，默认会显示今天的日期，不需要改的话点「好」就行了。</p>
+<p><img src="/2019/04/06/产品设计化繁为简/img5_4.jpg" alt="img5_4"></p>
+<p>最后一步，如果需要的话——设置提醒时间。</p>
+<p>虽然步骤并没有减少，但是每一步都只需要聚焦在当前这一件事上，省略了很多反应、思考的成本。</p>
+<h2 id="6-考虑可能出现的人为差错"><a href="#6-考虑可能出现的人为差错" class="headerlink" title="6. 考虑可能出现的人为差错"></a>6. 考虑可能出现的人为差错</h2><p>虽然我们做了很多努力来减少用户出错的可能性，但人为差错是很难完全避免的，因此有时需要考虑一些弥补手段——这个大家都很熟练了。</p>
+<p>针对一些无法逆转的操作，一方面我们可以增加难度，比如说删除自己的回答时的二次确认。</p>
+<p>另一方面，让用户能够比较容易地撤销错误操作。邮箱中，归档或删除邮件可能是比「在知乎删除回答」要频繁得多的操作，每次都「二次确认」就很烦（我又想到了在 iOS 中删短信，真的烦死了），因此 Gmail 中提供了一个「撤销」按钮，给你几秒钟反悔的机会。</p>
+<hr>
+<p>如果每次做设计时，都能认真考虑到这些原则，应该就能做出更好的产品吧，与大家共勉~</p>
+<p>希望以上的分享能给大家带去一点微小的帮助（比心）~</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/设计/" rel="tag"># 设计</a>
+          
+            <a href="/tags/阅读笔记/" rel="tag"># 阅读笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/05/最近的手绘练习/" rel="next" title="最近的手绘练习">
+                <i class="fa fa-chevron-left"></i> 最近的手绘练习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Yew">
+            
+              <p class="site-author-name" itemprop="name">Yew</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/viryyew" title="GitHub &rarr; https://github.com/viryyew" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:viryyew@qq.com" title="E-Mail &rarr; mailto:viryyew@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope-square"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/lilibeyi" title="Weibo &rarr; https://weibo.com/lilibeyi" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://instagram.com/yewprince" title="Instagram &rarr; https://instagram.com/yewprince" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i>Instagram</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.lijinxiu.com" title="http://blog.lijinxiu.com" rel="noopener" target="_blank">Maybe</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#「化繁为简」的设计原则"><span class="nav-number">1.</span> <span class="nav-text">「化繁为简」的设计原则</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-应用储存于外部世界和头脑中的知识"><span class="nav-number">2.</span> <span class="nav-text">1. 应用储存于外部世界和头脑中的知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-简化任务的结构"><span class="nav-number">3.</span> <span class="nav-text">2. 简化任务的结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-注重可视性，消除执行阶段和评估阶段的鸿沟"><span class="nav-number">4.</span> <span class="nav-text">3. 注重可视性，消除执行阶段和评估阶段的鸿沟</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-建立正确的匹配关系"><span class="nav-number">5.</span> <span class="nav-text">4. 建立正确的匹配关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-利用自然和人为的限制性因素"><span class="nav-number">6.</span> <span class="nav-text">5. 利用自然和人为的限制性因素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-考虑可能出现的人为差错"><span class="nav-number">7.</span> <span class="nav-text">6. 考虑可能出现的人为差错</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heartbeat"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Yew</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.1.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.0"></script>
+
+  <script src="/js/motion.js?v=7.1.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.0"></script>
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.0"></script>
+
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
