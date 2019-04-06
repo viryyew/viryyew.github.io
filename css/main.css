@@ -1767,7 +1767,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f49d1f;
+  background: #61f0ff;
 }
 .feed-link,
 .chat {
@@ -1796,7 +1796,7 @@ pre .javascript .function {
   color: #fff;
 }
 .links-of-blogroll {
-  margin-top: 10px;
+  margin-top: 30px;
   font-size: 13px;
 }
 .links-of-blogroll-title {
@@ -2749,7 +2749,8 @@ ul.breadcrumb li+li:last-child {
 }
 .links-of-blogroll {
   text-align: center;
-  padding: 3px 0 0;
+  padding: 20px 0 0;
+  border-top: dotted 1px #d3d3d3;
 }
 .links-of-blogroll-item {
   padding: 0;
