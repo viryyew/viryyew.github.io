@@ -144,21 +144,24 @@
 
 
 
-  <meta name="description" content="前段时间，我们在知乎的移动端富文本编辑器中，增加了这个辅助小功能，在弱网环境下自动保存本地草稿，从而减少网络不稳定带来的草稿内容丢失的情况。">
+  <meta name="description" content="我到知乎参与的第一个项目就是「想法」，当时有较长的一段时间都在做转发及评论的改版，我参与了新版转评功能的方案制定，并完成了交互及 UI 的设计工作。">
 <meta name="keywords" content="工作,产品,UX&amp;UI">
 <meta property="og:type" content="article">
-<meta property="og:title" content="产品设计总结 - App 端的本地草稿">
-<meta property="og:url" content="http://viryyew.github.io/2019/06/12/App 端的本地草稿/index.html">
+<meta property="og:title" content="产品设计总结 - 「想法」转发改版">
+<meta property="og:url" content="http://viryyew.github.io/2019/06/13/「想法」转发改版/index.html">
 <meta property="og:site_name" content="Yew&#39;s Blog">
-<meta property="og:description" content="前段时间，我们在知乎的移动端富文本编辑器中，增加了这个辅助小功能，在弱网环境下自动保存本地草稿，从而减少网络不稳定带来的草稿内容丢失的情况。">
+<meta property="og:description" content="我到知乎参与的第一个项目就是「想法」，当时有较长的一段时间都在做转发及评论的改版，我参与了新版转评功能的方案制定，并完成了交互及 UI 的设计工作。">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="http://viryyew.github.io/2019/06/12/App%20端的本地草稿/editn_cover.jpg">
-<meta property="og:image" content="http://viryyew.github.io/2019/06/12/App%20端的本地草稿/editn_1.jpg">
-<meta property="og:updated_time" content="2019-06-12T14:35:12.862Z">
+<meta property="og:image" content="http://viryyew.github.io/2019/06/13/「想法」转发改版/dbrepo_cover.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/06/13/「想法」转发改版/dbrepo_1.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/06/13/「想法」转发改版/dbrepo_2.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/06/13/「想法」转发改版/dbrepo_4.jpg">
+<meta property="og:image" content="http://viryyew.github.io/2019/06/13/「想法」转发改版/dbrepo_3.jpg">
+<meta property="og:updated_time" content="2019-06-22T14:38:20.518Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="产品设计总结 - App 端的本地草稿">
-<meta name="twitter:description" content="前段时间，我们在知乎的移动端富文本编辑器中，增加了这个辅助小功能，在弱网环境下自动保存本地草稿，从而减少网络不稳定带来的草稿内容丢失的情况。">
-<meta name="twitter:image" content="http://viryyew.github.io/2019/06/12/App%20端的本地草稿/editn_cover.jpg">
+<meta name="twitter:title" content="产品设计总结 - 「想法」转发改版">
+<meta name="twitter:description" content="我到知乎参与的第一个项目就是「想法」，当时有较长的一段时间都在做转发及评论的改版，我参与了新版转评功能的方案制定，并完成了交互及 UI 的设计工作。">
+<meta name="twitter:image" content="http://viryyew.github.io/2019/06/13/「想法」转发改版/dbrepo_cover.jpg">
 
 
 
@@ -166,7 +169,7 @@
 
   
   
-  <link rel="canonical" href="http://viryyew.github.io/2019/06/12/App 端的本地草稿/">
+  <link rel="canonical" href="http://viryyew.github.io/2019/06/13/「想法」转发改版/">
 
 
 
@@ -176,7 +179,7 @@
   };
 </script>
 
-  <title>产品设计总结 - App 端的本地草稿 | Yew's Blog</title>
+  <title>产品设计总结 - 「想法」转发改版 | Yew's Blog</title>
   
 
 
@@ -396,7 +399,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://viryyew.github.io/2019/06/12/App 端的本地草稿/">
+    <link itemprop="mainEntityOfPage" href="http://viryyew.github.io/2019/06/13/「想法」转发改版/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yew">
@@ -413,7 +416,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">产品设计总结 - App 端的本地草稿
+          <h1 class="post-title" itemprop="name headline">产品设计总结 - 「想法」转发改版
 
               
             
@@ -439,12 +442,24 @@
                 
               
 
-              <time title="Created: 2019-06-12 13:25:11 / Modified: 22:35:12" itemprop="dateCreated datePublished" datetime="2019-06-12T13:25:11+08:00">2019-06-12</time>
+              <time title="Created: 2019-06-13 22:33:03" itemprop="dateCreated datePublished" datetime="2019-06-13T22:33:03+08:00">2019-06-13</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-06-22 22:38:20" itemprop="dateModified" datetime="2019-06-22T22:38:20+08:00">2019-06-22</time>
               
             
           </span>
@@ -503,29 +518,38 @@
       
 
       
-        <p><img src="/2019/06/12/App 端的本地草稿/editn_cover.jpg" alt="rt_cover"></p>
-<p>前段时间，我们在知乎的移动端富文本编辑器中，增加了这个辅助小功能，在弱网环境下自动保存本地草稿，从而减少网络不稳定带来的草稿内容丢失的情况。</p>
+        <p><img src="/2019/06/13/「想法」转发改版/dbrepo_cover.jpg" alt="dbrepo_cover"></p>
+<p>我到知乎参与的第一个项目就是「想法」，当时有较长的一段时间都在做转发及评论的改版，我参与了新版转评功能的方案制定，并完成了交互及 UI 的设计工作。</p>
 <a id="more"></a>
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>草稿内容丢失的问题，因为难以复现所以无法准确定位原因，一旦发生就极其影响用户体验。我们一直在和技术团队一起思考解决方案。在修复真正的 bug 之前，我们也需要一些弥补手段减少这种情况的出现频率。</p>
-<p>我们的草稿箱是自动保存机制，没有手动保存的按钮，用户在编辑内容的过程中，程序会以一定的规则自动将更改保存至服务器，这就意味着网络环境不稳定会导致部分编辑的内容无法正常保存，这也是导致草稿丢失的原因之一。</p>
-<p>针对这种情况，我们决定增加一个「弱网下将草稿保存在本地」的功能。因为浏览器缓存太不稳定，所以这个功能只做到 app 中。</p>
-<p>浏览器也是一个很重要的创作场景，我们针对电脑端操作的特性做了 <code>历史版本</code> 的功能，就不在本文赘述了。</p>
-<h2 id="产品思路"><a href="#产品思路" class="headerlink" title="产品思路"></a>产品思路</h2><p>我在项目中主要的工作是交互和 UI 的设计，这个项目涉及到的页面很少，所以设计上的工作并不多，但是因为编辑器和草稿箱本身的复杂性，产品逻辑和技术实现方式，都需要和工程师沟通再细致敲定。</p>
-<p>最终我们确定的方案细节就不说了，大体上的逻辑如下：</p>
+<h2 id="为什么要改版"><a href="#为什么要改版" class="headerlink" title="为什么要改版"></a>为什么要改版</h2><p>改版前，想法的转发效果有点像 Twitter（展示逻辑不一样，只是形式相似），将转发分为「空转发」和「包含文字的转发」，两种操作会产生不一样的内容样式。产品设计的初衷是将「空转发」定义为「对原文的扩散与分发」，认为「包含文字的转发」则是和原文同等重要的创作。</p>
+<p><img src="/2019/06/13/「想法」转发改版/dbrepo_1.jpg" alt="dbrepo_1"></p>
+<p>这样的设计，好处是每一级转发创作的内容都得到了充分的尊重，读者也可以与其中任意一级的作者互动。同时，也存在着一些问题：</p>
 <ol>
-<li>用户在编辑内容的过程中，自动保存至云端如果失败了，客户端就立即保存一个本地草稿</li>
-<li>编辑的过程中网络恢复，则直接上传草稿至云端，并清除本地草稿</li>
-<li>如果在网络恢复前，用户离开了编辑器，则在其下次于同一设备上进入编辑器时，提醒草稿冲突，由其自行选择需要恢复的草稿（云端草稿和本地草稿）</li>
+<li>转发链较长的时候，前面的内容会被收起来，无法得到曝光，同时读者不了解前因后果也会造成一些理解上的困难</li>
+<li>阅读转发内容时的视觉动线是从下至上的，链条结构太长，追溯的成本就会很高</li>
+<li>转发一旦输入内容，形式就与原创想法基本相同，会提高用户的心理门槛</li>
+<li>空转内容无法被互动，一定程度上会打击用户转发的积极性</li>
 </ol>
-<h2 id="最终设计"><a href="#最终设计" class="headerlink" title="最终设计"></a>最终设计</h2><p>自动保存的过程不涉及到交互（只需要一个弱弱的「本地草稿保存中」的提示即可），主要的交互场景在后续的编辑过程中。</p>
-<p>针对这个流程，我尝试了几种交互方案，有些因为技术成本的原因放弃了，最终我们选择了一个权衡方案，如下图：</p>
-<p><img src="/2019/06/12/App 端的本地草稿/editn_1.jpg" alt="rt_cover"></p>
-<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>这不是一个需要看数据指标的项目。在我看来这个「小项目」其实做得不够完善，前期拿到需求时有些先入为主的概念，方案还有很多优化的空间。</p>
-<p>实际上，弹窗并不是我们的首选方案，因为它会中断用户的正常操作。真实的使用场景中，大家面对这种弹窗时的耐心值总是极低的，可能连标题都没法认真看完。因此也可以有别的方案，比如说——</p>
-<p>用户再次进入编辑器时，默认加载云端草稿，用一个小入口承载离线草稿，用户可以选择性地预览并替换当前草稿。</p>
-<p>这个事情的逻辑就从「我必须立刻做出二选一的决定才能继续操作」变成了「你已经帮我做了选择，但我可以随时改变」，后者的心理压力要小很多，操作成本也更可控。将选择后置也会有个小问题，当默认加载的这份草稿与用户的预期有较大出入时，用户容易产生慌乱感——和被弹窗打断的负面感觉相比，哪个更强烈，还真不好说……</p>
-<hr>
-<p>Cover photo by <a href="https://unsplash.com/@florianklauer?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Florian Klauer</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a></p>
+<p>因此我们决定对原转发功能进行一次较大的改版。</p>
+<h2 id="我们的目标是……"><a href="#我们的目标是……" class="headerlink" title="我们的目标是……"></a>我们的目标是……</h2><p>（没……没有蛀牙？）</p>
+<ul>
+<li>提升转发内容的阅读效率，使用户一眼就能识别转发内容</li>
+<li>降低转发的创作心理门槛，别让产品形态阻碍用户使用功能（让大家想扩散内容或参与讨论的时候，能没有心理压力地进行转发）</li>
+<li>让空转的内容也能得到互动</li>
+</ul>
+<p>看上去似乎照着微博抄一遍就都解决了……这种嵌套式的转发结构确实符合我们的想象，但实际上情况要更麻烦一些，想法和微博有很多不一样的地方，我们也有一些独特的需求：</p>
+<ul>
+<li>一条微博 140 字（虽然后来原创微博放宽了限制，但转发内容一直都是 140），而一条想法的上限是 2000 字……虽然基本上没有人会写那么长的内容，但产品方案上需要允许容纳比微博长很多很多的转发链条</li>
+<li>用户在转发的时候输入内容，大部分情况下，参与互动的动机并不比发评论要弱，因此我们希望这些内容也能在评论区落地，获得更多曝光和被回复的机会</li>
+<li>使用嵌套式的结构，无疑会牺牲中间层的互动按钮，但我们希望链条中的每一个有价值的讨论，都能够被读者触及</li>
+</ul>
+<p>还有一个小问题，微博的转发格式（//@XXXX）是可以被「伪造」的，虽然以当时想法的量级来说，这个风险不大，但我们也需要有独特的转发样式，将这种风险扼杀在摇篮里……</p>
+<h2 id="最终设计"><a href="#最终设计" class="headerlink" title="最终设计"></a>最终设计</h2><p>我们最终选择的就是嵌套式的结构——与需求匹配、用户无额外的学习成本。这种结构下，单条转发的想法，主要包含几个内容模块：转发的作者；转发链的内容；原文作者及内容；互动按钮。想法是通过关注关系流通的，被关注者的信息一定是用户关心的，也是他们想要互动的对象，因此如果卡片中只能保留一份互动按钮，那得是针对最外层的这条想法。</p>
+<p><img src="/2019/06/13/「想法」转发改版/dbrepo_2.jpg" alt="dbrepo_2"></p>
+<p>带内容的转发会在<strong>上一级</strong>想法下生成一条评论，这条评论带有转发原文的入口，用户可以在上一级的评论区与其互动，也可以「一键直达」这条想法。</p>
+<p><img src="/2019/06/13/「想法」转发改版/dbrepo_4.jpg" alt="dbrepo_4"></p>
+<p><img src="/2019/06/13/「想法」转发改版/dbrepo_3.jpg" alt="dbrepo_3"></p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>新版转评功能分了几期上线，数据表现和反馈情况都还是不错的，转发内容的量有了显著增长，涉及业务保密性，就不多说了。后来想法又陆续增加了转评带图和带表情的功能，更加完善了，用户在短内容社交中的需求基本都能得到满足。</p>
 
       
     </div>
@@ -566,8 +590,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/06/9102年了我又开始写博客了/" rel="next" title="9102 年了我又开始写博客了">
-                <i class="fa fa-chevron-left"></i> 9102 年了我又开始写博客了
+              <a href="/2019/06/12/App 端的本地草稿/" rel="next" title="产品设计总结 - App 端的本地草稿">
+                <i class="fa fa-chevron-left"></i> 产品设计总结 - App 端的本地草稿
               </a>
             
           </div>
@@ -575,10 +599,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/06/13/「想法」转发改版/" rel="prev" title="产品设计总结 - 「想法」转发改版">
-                产品设计总结 - 「想法」转发改版 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -803,7 +823,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景"><span class="nav-text">背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#产品思路"><span class="nav-text">产品思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最终设计"><span class="nav-text">最终设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后记"><span class="nav-text">后记</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要改版"><span class="nav-text">为什么要改版</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#我们的目标是……"><span class="nav-text">我们的目标是……</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最终设计"><span class="nav-text">最终设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后记"><span class="nav-text">后记</span></a></li></ol></div>
             
 
           </div>
